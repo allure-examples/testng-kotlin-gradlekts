@@ -1,17 +1,17 @@
 plugins {
-    kotlin("jvm") version "1.9.22"
+    kotlin("jvm") version "1.9.23"
 }
 
 tasks.withType(Wrapper::class) {
-    gradleVersion = "8.6"
+    gradleVersion = "8.7"
 }
 
 group = "com.example.testng"
 version = "1.0-SNAPSHOT"
 
-val allureVersion = "2.25.0"
-val aspectJVersion = "1.9.21"
-val kotlinVersion = "1.9.22"
+val allureVersion = "2.26.0"
+val aspectJVersion = "1.9.22"
+val kotlinVersion = "1.9.23"
 
 kotlin {
     jvmToolchain(21)
