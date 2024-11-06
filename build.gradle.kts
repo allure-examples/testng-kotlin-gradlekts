@@ -1,17 +1,17 @@
 plugins {
-    kotlin("jvm") version "1.9.23"
+    kotlin("jvm") version "1.9.25"
 }
 
 tasks.withType(Wrapper::class) {
-    gradleVersion = "8.7"
+    gradleVersion = "8.10.2"
 }
 
 group = "com.example.testng"
 version = "1.0-SNAPSHOT"
 
-val allureVersion = "2.26.0"
+val allureVersion = "2.29.0"
 val aspectJVersion = "1.9.22"
-val kotlinVersion = "1.9.23"
+val kotlinVersion = "1.9.25"
 
 kotlin {
     jvmToolchain(21)
@@ -36,12 +36,12 @@ dependencies {
     testImplementation("org.jetbrains.kotlin:kotlin-stdlib")
     testImplementation("org.jetbrains.kotlin:kotlin-test-testng")
 
-    testImplementation("org.testng:testng:7.9.0")
+    testImplementation("org.testng:testng:7.10.2")
     
     testImplementation(platform("io.qameta.allure:allure-bom:$allureVersion"))
     testImplementation("io.qameta.allure:allure-testng")
 
-    testImplementation("org.slf4j:slf4j-simple:2.0.12")
+    testImplementation("org.slf4j:slf4j-simple:2.0.16")
 }
 
 repositories {
